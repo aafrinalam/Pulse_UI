@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #eafaf1;
+    padding: 0px 0px 60px 0px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.457);
+}
+
+header .navbar {
+    height: 150px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+
+header .navbar .nav-logo img {
+    height: 50px;
+}
+
+header .navbar ul li{
+    list-style: none;
+    margin: 15px;
+    display: inline-block;
+}
+header .navbar ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #00ad6a;
+}
+
+header .navbar ul li a:hover {
+    color: black;
+}
+
+header .navbar ul li .active {
+    color: black;
+}
+
+header .navbar ul li a button {
+    border: 2px solid #00ad6a;
+    padding: 3px 15px;
+    background: none;
+    color: #00ad6a;
+    font-weight: 700;
+}
+
+header .navbar ul li a button:hover {
+    box-shadow: -5px 5px 0px #00ad6a;
+}
+
+header .hero {
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+}
+
+header .hero .upper-content h1 {
+    width: 50%;
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    color: black;
+    font-size: 60px;
+}
+
+header .hero .upper-content p {
+    width: 48%;
+    display: block;
+    margin: 15px auto 0px auto;
+    text-align: center;
+    color: black;
+}
+
+header .hero .plans {
+    width: 100%;
+    /* background-color: green; */
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+header .hero .plans .left {
+    width: 30%;
+    /* background-color: red; */
+}
+
+header .hero .plans .left h5 {
+    color: #00ad6a;
+    font-weight: 700;
+}
+
+header .hero .plans .left ul {
+    margin-top: 20px;
+}
+
+header .hero .plans .left ul li {
+    margin-left: -10px;
+    color: #585b62;
+}
+
+header .hero .plans .right {
+    width: 70%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+}
+
+header .hero .plans .right .card1 {
+    /* background-color: blue; */
+    width: 50%;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid #00ad6a;
+    background: white;
+    padding-bottom: 50px;
+}
+
+header .hero .plans .right .card1:hover .card-body a>:nth-of-type(1){
+    scale: 1.2 1.2;
+    transition: all .3s ease-in-out;
+    color: #3c3d41;
+}
+
+header .hero .plans .right .card1 .card-body>:nth-child(1) {
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: 700;
+    font-size: 12px;
+    background-color: #00ad6a;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+header .hero .plans .right .card1 .card-body>:nth-child(2) {
+    color: #00ad6a;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+header .hero .plans .right .card1 .card-body>:nth-child(3) {
+    text-align: center;
+    color: #83858a;
+    margin-top: 15px;
+}
+
+header .hero .plans .right .card1 .card-body>:nth-child(5) {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+header .hero .plans .right .card1 .card-body a {
+    text-decoration: none;
+}
+
+header .hero .plans .right .card1 .card-body a>:nth-of-type(1) {
+    background: #35e682;
+    color: #585b62;
+    display: block;
+    margin: 25px auto 35px auto;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+header .hero .plans .right .card1 .card-body p {
+    padding: 0px 15px;
+}
+
+header .hero .plans .right .card1 .card-body p i {
+    color: #00ad6a;
+}
+
+
+header .hero .plans .right .card2 {
+    width: 50%;
+    background-color: white;
+    padding-bottom: 25px;
+    border: 1px solid #ffdadae9;
+}
+
+header .hero .plans .right .card2:hover .card-body a>:nth-of-type(1){
+    scale: 1.2 1.2;
+    transition: all .3s ease-in-out;
+    color: #3c3d41;
+}
+
+header .hero .plans .right .card2 .card-body>:nth-child(1) {
+    color: #585b62;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px 15px;
+    background-color: #f2f3f3;
+}
+
+header .hero .plans .right .card2 .card-body>:nth-child(2) {
+    color: #00ad6a;
+    text-align: center;
+    font-weight: 400;
+}
+
+header .hero .plans .right .card2 .card-body>:nth-child(3) {
+    color: #83858a;
+    text-align: center;
+    margin-top: 15px;
+}
+
+header .hero .plans .right .card2 .card-body>:nth-child(5) {
+    color: #000000;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+header .hero .plans .right .card2 .card-body a {
+    text-decoration: none;
+}
+
+header .hero .plans .right .card2 .card-body a>:nth-of-type(1) {
+    background: #35e682;
+    color: #585b62;
+    display: block;
+    margin: 25px auto 35px auto;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 10px 25px;
+    border: none;
+    outline: none;
+}
+
+header .hero .plans .right .card2 .card-body p {
+    padding: 0px 15px;
+}
+
+header .hero .plans .right .card2 .card-body p i {
+    color: #00ad6a;
+}
+
+
+
+header .hero .lower-content {
+    margin-top: 100px;
+}
+
+header .hero .lower-content img {
+    display: block;
+    margin: 0px auto;
+}
+
+header .hero .lower-content p {
+    font-size: 25px;
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 15px auto;
+}
+
+header .hero .lower-content h6 {
+    color: #00ad6a;
+    font-weight: 800;
+    font-size: 12px;
+    text-align: center;
+}
+
+.FAQ{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px auto;
+    background-color: white;
+}
+
+
+
+.FAQ .left{
+    width: 45%;
+}
+
+.FAQ .left .quest h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.FAQ .left .quest{
+    margin-top: 40px;
+}
+
+.FAQ .right{
+    width: 45%;
+}
+
+.FAQ .right .quest h3{
+    font-size: 18px;
+    font-weight: 700;
+}
+.FAQ .right .quest{
+    margin-top: 40px;
+}
+
+footer{
+    width: 100%;
+    background-color: #080c16;
+}
+
+footer .footer-container{
+    width: 80%;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px auto;
+    padding: 100px 0px;
+}
+
+footer .footer-container .left{
+    width: 40%;
+    /* background-color: red; */
+}
+
+footer .footer-container .left img{
+    height: 70px;
+}
+
+footer .footer-container .left a{
+    text-decoration: none;
+}
+
+footer .footer-container .left  a>:nth-of-type(1){
+    background: linear-gradient(to right, #00ac6a,#23ea76);
+    color: #080c16;
+    display: block;
+    font-weight: 700;
+    /* font-size: 20px; */
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+footer .footer-container .left  a>:nth-of-type(1):hover{
+    box-shadow: -5px 5px 0px  #585b62;
+}
+
+footer .footer-container .right{
+    width: 50%;
+    /* background-color: #00ac6a; */
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-container .right ul li{
+    list-style: none;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+footer .footer-container .right ul li .active{
+    color: white;
+    font-weight: 700;
+}
+
+footer .footer-container .right ul li a{
+    color: #00ac6a;
+    text-decoration: none;
+}
+
+footer .footer-container .right ul li a:hover{
+    color: white;
+}
+
+@media (max-width: 1024px){
+    footer .footer-container .left  a>:nth-of-type(1){
+        padding: 15px 20px;
+    }
+}
+
+@media (max-width: 786px){
+
+    .navbar .nav-list{
+        position: fixed;
+        top: 105px;
+        right: -100%;
+        width: 20%;
+        background-color: #00ac6a4a;
+        margin: 28px auto;
+        text-align: center;
+        backdrop-filter: blur(10px);
+        padding: 15.5px 10px 40px 10px;
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+        
+    }
+
+    #click{
+        /* display: none; */
+    }
+    
+    #click:checked ~ .nav-lst{
+        right: 8%;
+    }
+
+
+    header .navbar ul li{
+        list-style: none;
+        margin: 15px;
+        display: inline-block;
+    }
+
+    header .navbar {
+        width: 91%;
+    }
+
+    header .hero {
+        width: 85%;
+    }
+
+    .FAQ{
+        width: 85%;
+    }
+
+    footer .footer-container{
+        width: 85%;
+    }
+
+    footer .footer-container .left img{
+        height: 60px;
+        margin-left: -35px;
+    }
+    
+    footer .footer-container .left  a>:nth-of-type(1){
+        padding: 15px 10px;
+        margin-left: 00px;
+    }
+    
+    
+}
+
+@media (max-width: 426px){
+
+    header .hero .upper-content h1 {
+        width: 100%;
+        font-size: 50px;
+    }
+
+    header .hero .upper-content p {
+        width: 90%;
+    }
+
+    header .hero .plans {
+        margin-top: 80px;
+        flex-direction: column-reverse;
+    }
+
+    header .hero .plans .left {
+        width: 86%;
+        margin-top: 50px;
+    }
+
+    header .hero .plans .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header .hero .plans .right .card1 {
+        width: 100%;
+    }
+
+    header .hero .plans .right .card2 {
+        width: 100%;
+    }
+    
+    header .hero .lower-content {
+        margin-top: 60px;
+    }
+
+    .FAQ{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FAQ .left{
+        width: 100%;
+    }
+
+    .FAQ .right{
+        width: 100%;
+    }
+
+    footer .footer-container{
+        width: 80%;
+        flex-direction: column;
+        padding: 60px 0px;
+    }
+
+    footer .footer-container .left{
+        width: 100%;
+        /* background-color: red; */
+    }
+    
+    footer .footer-container .left img{
+        height: 50px;
+        margin-left: -30px;
+    }
+
+    footer .footer-container .left  a>:nth-of-type(1){
+        padding: 15px 10px;
+        margin-top: 20px;
+    }
+
+    footer .footer-container .right{
+        width: 100%;
+        margin-left: -35px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+    
+    
+}
+
+
+@media (max-width: 426px){
+
+    header .hero .upper-content h1 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    header .hero .upper-content p {
+        width: 90%;
+    }
+}
